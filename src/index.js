@@ -27,7 +27,7 @@ app.post('/user', (req, res) => {
         }
         users.push(user);
 
-        res.status(201).json(user);
+        return res.status(201).json(user);
     }
 });
 
